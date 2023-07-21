@@ -77,13 +77,16 @@ WSGI_APPLICATION = 'task.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'cf47fd88-27ff-11ee-be56-0242ac120002',
+        'URL':  'https://ijdydykxcilcjrvnvehe.supabase.co',
+        'API_KEY': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqZHlkeWt4Y2lsY2pydm52ZWhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODk5NjkwMjAsImV4cCI6MjAwNTU0NTAyMH0.mgVFbCIn-ORSJRR_CLmrS9XFiggyTUjC-wDXZgSA4A0',
+        'AUTO_CREATE_TABLES': True,
+        'HOST': 'db.ijdydykxcilcjrvnvehe.supabase.co',
+        'PORT': '5432'
     }
-}
-
-OPTIONS = {
-    'deterministic': False
 }
 
 
