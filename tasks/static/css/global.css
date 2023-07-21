@@ -1,0 +1,154 @@
+:root {
+  --font-family-primary: Urbanist, sans-serif;
+  --font-family-base: Inter, sans-serif;
+
+  --line-height-sm: 125%;
+  --line-height-md: 160%;
+  --line-height-lg: 175%;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 0.85rem;
+  --font-size-s: 1rem;
+  --font-size-m: 1.25rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.5rem;
+
+  --border-size-default: 1px;
+  --border-size-active: 2px;
+
+  --border-radius-default: 8px;
+  --border-radius-primary: 8px, 8px, 0, 8px;
+
+  --color-primary-light: #d3c6f1;
+  --color-primary-pure: #8257e6;
+  --color-primary-dark: #422d76;
+
+  --color-success-light: #c8f3da;
+  --color-success-pure: #5fee98;
+  --color-success-dark: #3d9862;
+
+  --color-error-light: #eeb7c3;
+  --color-error-pure: #dc264c;
+  --color-error-dark: #b01e3d;
+
+  --color-info-pure: #885ee9;
+
+  --color-secondary: #323238;
+  --color-tertiary: #202024;
+  --color-light: #e1e1e6;
+  --color-background: #121214;
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-family-base), sans-serif;
+  line-height: 160%;
+  font: normal, 1rem;
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-background);
+  color: var(--color-light);
+  font-variant-numeric: tabular-nums;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+section a {
+  background: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button, a {
+  background-color: var(--color-primary-pure);
+  height: 40px;
+  border: none;
+  padding: 0 32px;
+  border-radius: 4px;
+  color: var(--color-light);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+input, textarea {
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  text-align: left;
+  padding: 8px;
+  color: var(--color-light)
+}
+
+input[type="checkbox"]:not(:checked) {
+  height: 16px;
+  background-color: var(--color-secondary);
+  width: fit-content;
+}
+
+input[type="checkbox"]:checked {
+  height: 16px;
+  background-color: var(--color-secondary);
+  width: fit-content;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 16px;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--color-light);
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+form button {
+  width: 100%;
+}
+
+form p textarea {
+  height: auto;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
